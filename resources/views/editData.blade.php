@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- <style> @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); </style> -->
     <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css” />
+    
 </head>
 <body>
     <script src="register.js"></script>
@@ -54,11 +55,13 @@
             <div class="inputAdd">
                 <div class="input_box">
                     <input type="text" placeholder="Address" name="Address" id="Address" minlength=8 maxlength=15 value="{{$kars->Address}}" required>
+                    <i class="fa fa-address-card" aria-hidden="true" style="color: whitesmoke;"></i>
                 </div>
             </div>
             <div class="inputTLP">
                 <div class="input_box">
                     <input type="tel" placeholder="Telephone Number" name="TLP" id="TLP" value="{{$kars->TLP}}" onchange="validate()" required>
+                    <i class="fa fa-phone" aria-hidden="true" style="color: whitesmoke;"></i>
                     <script>
                     function validate() {
                     var x = document.getElementById("TLP").value;

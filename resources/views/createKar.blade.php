@@ -53,11 +53,13 @@
             <div class="inputAdd">
                 <div class="input_box">
                     <input type="text" placeholder="Address" name="Address" id="Address" minlength=8 maxlength=15 required>
+                    <i class="fa fa-address-card" aria-hidden="true" style="color: whitesmoke;"></i>
                 </div>
             </div>
             <div class="inputTLP">
                 <div class="input_box">
                     <input type="tel" placeholder="Telephone Number" name="TLP" id="TLP" onchange="validate()" required>
+                    <i class="fa fa-phone" aria-hidden="true" style="color: whitesmoke;"></i>
                     <script>
                     function validate(){
                     var x = document.getElementById("TLP").value;
